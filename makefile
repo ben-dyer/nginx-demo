@@ -22,3 +22,7 @@ index: ud
 	curl -i localhost:8013/index.html
 test: ud
 	curl -i localhost:8013/test.html
+
+.PHONY: sub
+sub: ud
+	curl -i localhost:8013/sub/test.html
