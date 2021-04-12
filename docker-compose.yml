@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  ben:
+    container_name: bn
+    image: nginx
+    ports:
+      - 8013:80
+    volumes:
+      - ./ben:/usr/share/nginx
+      - ./nginx.conf:/etc/nginx/nginx.conf
