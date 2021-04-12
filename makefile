@@ -13,6 +13,10 @@ ud:
 t:
 	docker-compose run ben nginx -t
 
+.PHONY: b
+b:
+	docker-compose run ben bash
+
 .PHONY: index test
 index: ud
 	curl -i localhost:8013/index.html
